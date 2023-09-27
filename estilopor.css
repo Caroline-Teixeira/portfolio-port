@@ -1,0 +1,122 @@
+/*Fonte do texto do Google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* EESTILO GERAL (*) para toda a página HTML*/
+*{
+    margin: 0; /*margem*/
+    padding: 0; /*espaçamento*/
+    box-sizing: border-box; /*para que fiquem na mesma borda da caixa*/
+    font-family: "Poppins" , sans-serif;
+    color: rgb(3, 44, 44);
+}
+
+body{ /*estilo para o corpo da página*/
+    background-color: aqua;
+    height: 100vh; /*viewport, em relação a altura*/
+}
+
+.interface{
+    max-width: 1280px; /*largura máxima*/
+    margin: auto; /*centralizada na tela*/
+}
+
+
+.header{
+    padding: 40px 4% ;
+}
+.flex{
+    display: flex;
+}
+
+
+/*CABEÇALHO*/
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a{
+    color: rgb(9, 36, 36);
+    text-decoration: none; /*retira o sublilhado*/
+}
+
+header nav ul{
+    list-style-type: none; /*retira as bolinhas da lista*/
+}
+
+header nav ul li{
+    display: inline-block; /*menu na horizontal*/
+    padding: 1rem 4rem; /*cima e baixo, esquerda e direita*/
+    border: 1px solid rgb(20, 20, 20); /*borda da caixa*/
+    min-width: 4rem;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+header a{
+    color: rgb(9, 36, 36);
+    text-decoration: none; /*retira o sublilhado*/
+    display: inline-block; 
+    transition: 1.5s;
+}
+
+a:hover{ /*quando passa o mouse em cima*/
+    color: rgb(79, 89, 185);
+    transform: scale(1.5);
+    background-color: aliceblue;
+    box-shadow: 0px 0px 8px black;
+}
+
+.botao{ /*da pagina selecionada*/
+     color: rgb(247, 251, 255);
+     font-size: large;
+     background-color: black;
+ }
+
+ /*TEXTO E IMAGEM */
+ section.topo_do_site{
+    padding: 40px 4%;
+ }
+
+section.topo_do_site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /*espaçamento*/
+}
+
+.topo_do_site h1{
+    font-size: 40px;
+}
+.topo_do_site .texto1 h1 span{
+    color: rgb(67, 0, 94);
+    font-size: 70px;  
+}
+
+.topo_do_site .texto1 p{
+    color: rgb(67, 0, 94);
+    text-align: justify;
+}
+
+.topo_do_site .texto2 ul li{
+    color: rgb(67, 0, 94);
+    text-align: justify;
+}
+
+/*Animações*/
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.topo_do_site .Imagem1 img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; /*tempo de animação, velocidade, infinito*/
+
+}
+
