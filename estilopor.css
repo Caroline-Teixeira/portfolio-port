@@ -120,3 +120,28 @@ section.topo_do_site .flex{
 
 }
 
+/*Responsividade para celulares e tablets*/
+
+/*Barra do meunu*/
+@media screen and (max-width:768px){
+    nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+/*Imagem*/
+@media screen and (max-width:768px){
+    section{
+        width: 100%;
+        padding: 0;
+    }
+
+    .Imagem1{
+        display: none;
+        
+    }
+    
+
