@@ -1,7 +1,7 @@
 /*Fonte do texto do Google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* ESTILO GERAL (*) para toda a página HTML*/
+/* EESTILO GERAL (*) para toda a página HTML*/
 *{
     margin: 0; /*margem*/
     padding: 0; /*espaçamento*/
@@ -25,15 +25,18 @@ body{ /*estilo para o corpo da página*/
     padding: 40px 4% ;
 }
 .flex{
-    display: flex;
+    display: flex; /*lado a lado */
 }
 
 
 /*CABEÇALHO*/
+
+
 header > .interface{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: aqua
 }
 
 header a{
@@ -47,12 +50,14 @@ header nav ul{
 
 header nav ul li{
     display: inline-block; /*menu na horizontal*/
-    padding: 1rem 4rem; /*cima e baixo, esquerda e direita*/
+    padding: 1rem 5rem; /*cima e baixo, esquerda e direita*/
     border: 1px solid rgb(20, 20, 20); /*borda da caixa*/
-    min-width: 4rem;
+    min-width: 5rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     transition: .5s ease-in-out;
+
+    
 }
 
 header a{
@@ -66,7 +71,7 @@ a:hover{ /*quando passa o mouse em cima*/
     color: rgb(79, 89, 185);
     transform: scale(1.5);
     background-color: aliceblue;
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 9px black;
 }
 
 .botao{ /*da pagina selecionada*/
@@ -99,15 +104,25 @@ section.topo_do_site .flex{
     font-size: 70px;  
 }
 
+
 .topo_do_site .texto1 p{
     color: rgb(67, 0, 94);
     text-align: justify;
+    
 }
+
+.topo_do_site .texto1 ul li{
+    color: rgb(67, 0, 94);
+    text-align: justify;
+    list-style-type: none;
+    
+}
+
 
 .topo_do_site .texto2 ul li{
     color: rgb(67, 0, 94);
     text-align: justify;
-    list-style-type: none;
+    
 }
 
 /*Animações*/
@@ -128,26 +143,34 @@ section.topo_do_site .flex{
 
 /*Responsividade para celulares e tablets*/
 
-/*Barra do meunu*/
-@media screen and (max-width:768px){
+/*Barra do menu*/
+@media screen and (max-width:600px){
     nav li {
         float: none;
         text-align: center;
         width: 100%;
     }
 
-}
+    .topo_do_site h1{
+        text-align: center;
+        line-height: 150%;
 
-/*Imagem*/
+}
+}
+/*Posição da Imagem*/
 @media screen and (max-width:768px){
     section{
         width: 100%;
         padding: 0;
     }
 
-    .Imagem1{
-        display: none;
-        
+    .flex{
+        flex-direction: column-reverse;
+    }
+       
     }
     
+ 
+
+   
 
