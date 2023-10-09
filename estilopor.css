@@ -1,7 +1,7 @@
 /*Fonte do texto do Google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* EESTILO GERAL (*) para toda a página HTML*/
+/* ESTILO GERAL (*) para toda a página HTML*/
 *{
     margin: 0; /*margem*/
     padding: 0; /*espaçamento*/
@@ -70,7 +70,7 @@ header a{
 a:hover{ /*quando passa o mouse em cima*/
     color: rgb(79, 89, 185);
     transform: scale(1.5);
-    background-color: aliceblue;
+    background-color: transparent;
     box-shadow: 0px 0px 9px black;
 }
 
@@ -124,6 +124,38 @@ section.topo_do_site .flex{
     text-align: justify;
     
 }
+
+/*Ícones e demais links*/
+.social img{  
+    width: 35px;
+    border-radius: 50%;
+}
+
+.social a{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(79, 89, 185);
+}
+
+.social ul{
+    color: rgb(86, 36, 105);
+}
+
+
+.linguagens img{
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.linguagens{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+
 
 /*Animações*/
 @keyframes flutuar{
