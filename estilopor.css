@@ -11,8 +11,12 @@
 }
 
 body{ /*estilo para o corpo da página*/
-    background-color: aqua;
+    background-color: rgb(0, 255, 255);
     height: 100vh; /*viewport, em relação a altura*/
+    background-image: url(/tech2.png);
+    background-repeat: repeat;
+    background-size: contain;
+  
 }
 
 .interface{
@@ -95,24 +99,25 @@ section.topo_do_site .flex{
     font-size: 40px;
 }
 .topo_do_site .texto1 h1 span{
-    color: rgb(67, 0, 94);
+    color: rgb(92, 0, 126);
     font-size: 70px;  
 }
 
 .topo_do_site .texto2 h1 span{
-    color: rgb(67, 0, 94);
+    color: rgb(92, 0, 126);
     font-size: 70px;  
+    
 }
 
 
 .topo_do_site .texto1 p{
-    color: rgb(67, 0, 94);
+    color: rgb(51, 31, 88);
     text-align: justify;
     
 }
 
 .topo_do_site .texto1 ul li{
-    color: rgb(67, 0, 94);
+    color: rgb(43, 0, 59);
     text-align: justify;
     list-style-type: none;
     
@@ -120,9 +125,10 @@ section.topo_do_site .flex{
 
 
 .topo_do_site .texto2 ul li{
-    color: rgb(67, 0, 94);
+    color: rgb(43, 0, 59);
     text-align: justify;
-    
+    list-style-type: none;
+    background-color: rgba(114, 111, 146, 0.26);
 }
 
 /*Ícones e demais links*/
@@ -135,7 +141,7 @@ section.topo_do_site .flex{
     list-style-type: none;
     text-decoration: none;
     background-color: transparent;
-    color: rgb(79, 89, 185);
+    color: rgb(0, 51, 190);
 }
 
 .social ul{
@@ -171,7 +177,7 @@ section.topo_do_site .flex{
 
 }
 
-/*Responsividade para celulares e tablets*/
+/*RESPONSIVIDADE para celulares*/
 
 /*Barra do menu*/
 @media screen and (max-width:600px){
